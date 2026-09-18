@@ -1,7 +1,7 @@
 /* =========================================================
    MO. PORTFOLIO
    Classic Italian Editorial Design
-   Golden Geometric Afghan-Inspired Dividers
+   Golden Geometric Identity
 ========================================================= */
 
 
@@ -33,11 +33,13 @@
   --accent-hover: #5d241e;
 
 
-  /* Golden decorative color */
+  /* Main golden identity */
 
   --gold: #d2a64b;
 
-  --gold-soft: rgba(210, 166, 75, 0.16);
+  --gold-bright: #e2b85d;
+
+  --gold-dark: #b78932;
 
 
   --shadow:
@@ -68,14 +70,16 @@ body.dark {
   --border: #383a34;
 
 
-  --accent: #c47b6d;
+  --accent: #7b332a;
 
-  --accent-hover: #d28d7f;
+  --accent-hover: #6b2a22;
 
 
   --gold: #d2a64b;
 
-  --gold-soft: rgba(210, 166, 75, 0.12);
+  --gold-bright: #e5bd68;
+
+  --gold-dark: #b78932;
 
 
   --shadow:
@@ -105,18 +109,28 @@ body {
 
   margin: 0;
 
-  background: var(--background);
 
-  color: var(--text);
+  background:
+    var(--background);
+
+
+  color:
+    var(--text);
+
 
   font-family:
     "Inter",
     Arial,
     sans-serif;
 
-  font-size: 16px;
 
-  line-height: 1.7;
+  font-size:
+    16px;
+
+
+  line-height:
+    1.7;
+
 
   transition:
     background-color 0.35s ease,
@@ -127,16 +141,20 @@ body {
 
 img {
 
-  max-width: 100%;
+  max-width:
+    100%;
 
 }
 
 
 ::selection {
 
-  background: var(--gold);
+  background:
+    var(--gold);
 
-  color: #201b10;
+
+  color:
+    #201b10;
 
 }
 
@@ -148,21 +166,32 @@ img {
 
 .loader {
 
-  position: fixed;
-
-  inset: 0;
-
-  z-index: 9999;
+  position:
+    fixed;
 
 
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
+  inset:
+    0;
 
 
-  background: var(--background);
+  z-index:
+    9999;
+
+
+  display:
+    flex;
+
+
+  align-items:
+    center;
+
+
+  justify-content:
+    center;
+
+
+  background:
+    var(--background);
 
 
   transition:
@@ -174,83 +203,120 @@ img {
 
 .loader.hide {
 
-  opacity: 0;
+  opacity:
+    0;
 
-  visibility: hidden;
 
-  pointer-events: none;
+  visibility:
+    hidden;
+
+
+  pointer-events:
+    none;
 
 }
 
 
 .loader-inner {
 
-  text-align: center;
+  text-align:
+    center;
 
 }
 
 
 .laurel {
 
-  color: var(--gold);
+  color:
+    var(--gold);
+
 
   font-family:
     "Cormorant Garamond",
     Georgia,
     serif;
 
-  font-size: 34px;
 
-  margin-bottom: 10px;
+  font-size:
+    34px;
+
+
+  margin-bottom:
+    10px;
 
 }
 
 
 .loader-line {
 
-  width: 90px;
+  width:
+    90px;
 
-  height: 1px;
+
+  height:
+    1px;
+
 
   margin:
     0 auto 15px;
 
-  background: var(--gold);
+
+  background:
+    var(--gold);
 
 }
 
 
 .loader-inner p {
 
-  margin: 0;
+  margin:
+    0;
+
 
   font-family:
     "Cormorant Garamond",
     Georgia,
     serif;
 
-  font-size: 42px;
 
-  line-height: 1;
+  font-size:
+    42px;
 
-  font-style: italic;
+
+  line-height:
+    1;
+
+
+  font-style:
+    italic;
 
 }
 
 
 .loader-inner span {
 
-  display: block;
+  display:
+    block;
 
-  margin-top: 10px;
 
-  color: var(--muted);
+  margin-top:
+    10px;
 
-  font-size: 11px;
 
-  letter-spacing: 2px;
+  color:
+    var(--gold);
 
-  text-transform: uppercase;
+
+  font-size:
+    11px;
+
+
+  letter-spacing:
+    2px;
+
+
+  text-transform:
+    uppercase;
 
 }
 
@@ -262,18 +328,28 @@ img {
 
 .site-header {
 
-  position: sticky;
+  position:
+    sticky;
 
-  top: 0;
 
-  z-index: 1000;
+  top:
+    0;
 
-  width: 100%;
 
-  background: var(--background);
+  z-index:
+    1000;
+
+
+  width:
+    100%;
+
+
+  background:
+    var(--background);
+
 
   border-bottom:
-    1px solid var(--border);
+    1px solid var(--gold);
 
 }
 
@@ -286,27 +362,46 @@ img {
       calc(100% - 48px)
     );
 
-  min-height: 76px;
 
-  margin: 0 auto;
+  min-height:
+    76px;
 
 
-  display: flex;
+  margin:
+    0 auto;
 
-  align-items: center;
 
-  gap: 30px;
+  display:
+    flex;
+
+
+  align-items:
+    center;
+
+
+  gap:
+    30px;
 
 }
 
 
+
+/* =========================================================
+   GOLDEN BRAND
+========================================================= */
+
 .brand {
 
-  flex-shrink: 0;
+  flex-shrink:
+    0;
 
-  color: var(--text);
 
-  text-decoration: none;
+  color:
+    var(--gold);
+
+
+  text-decoration:
+    none;
 
 
   font-family:
@@ -314,58 +409,95 @@ img {
     Georgia,
     serif;
 
-  font-size: 32px;
 
-  font-weight: 600;
+  font-size:
+    32px;
 
-  line-height: 1;
 
-  letter-spacing: 2px;
+  font-weight:
+    600;
+
+
+  line-height:
+    1;
+
+
+  letter-spacing:
+    2px;
 
 
   transition:
-    color 0.25s ease;
+    color 0.25s ease,
+    transform 0.25s ease;
 
 }
 
 
 .brand:hover {
 
-  color: var(--gold);
+  color:
+    var(--gold-bright);
+
+
+  transform:
+    translateY(-1px);
 
 }
 
 
+
+/* =========================================================
+   GOLDEN NAVIGATION
+========================================================= */
+
 .main-nav {
 
-  flex: 1;
+  flex:
+    1;
 
-  display: flex;
 
-  align-items: center;
+  display:
+    flex;
 
-  justify-content: center;
 
-  gap: 28px;
+  align-items:
+    center;
+
+
+  justify-content:
+    center;
+
+
+  gap:
+    28px;
 
 }
 
 
 .main-nav a {
 
-  position: relative;
+  position:
+    relative;
 
 
-  color: var(--text-soft);
+  color:
+    var(--gold);
 
-  text-decoration: none;
+
+  text-decoration:
+    none;
 
 
-  font-size: 13px;
+  font-size:
+    13px;
 
-  font-weight: 500;
 
-  white-space: nowrap;
+  font-weight:
+    500;
+
+
+  white-space:
+    nowrap;
 
 
   transition:
@@ -377,21 +509,32 @@ img {
 
 .main-nav a::after {
 
-  content: "";
-
-  position: absolute;
-
-  left: 0;
-
-  bottom: -7px;
+  content:
+    "";
 
 
-  width: 0;
+  position:
+    absolute;
 
-  height: 1px;
+
+  left:
+    0;
 
 
-  background: var(--gold);
+  bottom:
+    -7px;
+
+
+  width:
+    0;
+
+
+  height:
+    1px;
+
+
+  background:
+    var(--gold-bright);
 
 
   transition:
@@ -402,7 +545,9 @@ img {
 
 .main-nav a:hover {
 
-  color: var(--gold);
+  color:
+    var(--gold-bright);
+
 
   transform:
     translateY(-1px);
@@ -412,51 +557,76 @@ img {
 
 .main-nav a:hover::after {
 
-  width: 100%;
+  width:
+    100%;
 
 }
 
 
+
+/* =========================================================
+   THEME BUTTON
+========================================================= */
+
 .theme-toggle {
 
-  flex-shrink: 0;
+  flex-shrink:
+    0;
 
 
-  width: 42px;
-
-  height: 42px;
-
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
+  width:
+    42px;
 
 
-  padding: 0;
+  height:
+    42px;
+
+
+  display:
+    flex;
+
+
+  align-items:
+    center;
+
+
+  justify-content:
+    center;
+
+
+  padding:
+    0;
 
 
   border:
-    1px solid var(--border);
-
-  border-radius: 50%;
+    1px solid var(--gold);
 
 
-  background: var(--surface);
+  border-radius:
+    50%;
 
-  color: var(--text);
+
+  background:
+    var(--surface);
 
 
-  cursor: pointer;
+  color:
+    var(--gold);
 
-  font-size: 18px;
+
+  cursor:
+    pointer;
+
+
+  font-size:
+    18px;
 
 
   transition:
     transform 0.25s ease,
     background-color 0.25s ease,
-    border-color 0.25s ease;
+    border-color 0.25s ease,
+    color 0.25s ease;
 
 }
 
@@ -466,9 +636,17 @@ img {
   transform:
     translateY(-2px);
 
-  border-color: var(--gold);
 
-  background: var(--surface-alt);
+  border-color:
+    var(--gold-bright);
+
+
+  color:
+    var(--gold-bright);
+
+
+  background:
+    var(--surface-alt);
 
 }
 
@@ -480,20 +658,28 @@ img {
 
 .ornamental-divider {
 
-  width: 100%;
-
-  height: 110px;
-
-
-  display: flex;
-
-  align-items: center;
+  width:
+    100%;
 
 
-  overflow: hidden;
+  height:
+    110px;
 
 
-  background: var(--background);
+  display:
+    flex;
+
+
+  align-items:
+    center;
+
+
+  overflow:
+    hidden;
+
+
+  background:
+    var(--background);
 
 
   transition:
@@ -504,24 +690,32 @@ img {
 
 .ornamental-pattern {
 
-  width: 100%;
+  width:
+    100%;
 
-  height: 100%;
+
+  height:
+    100%;
 
 
   background-image:
     url("golden-texture.png");
 
-  background-repeat: repeat-x;
+
+  background-repeat:
+    repeat-x;
+
 
   background-position:
     center center;
+
 
   background-size:
     auto 110px;
 
 
-  opacity: 0.92;
+  opacity:
+    0.95;
 
 
   transition:
@@ -530,16 +724,10 @@ img {
 }
 
 
-/*
-  A subtle dark-mode adjustment.
-
-  The transparent texture remains golden,
-  while the surrounding background changes.
-*/
-
 body.dark .ornamental-pattern {
 
-  opacity: 0.82;
+  opacity:
+    0.85;
 
 }
 
@@ -557,7 +745,10 @@ body.dark .ornamental-pattern {
       calc(100% - 48px)
     );
 
-  margin: 0 auto;
+
+  margin:
+    0 auto;
+
 
   padding:
     120px 0;
@@ -567,7 +758,8 @@ body.dark .ornamental-pattern {
 
 .section-heading {
 
-  margin-bottom: 65px;
+  margin-bottom:
+    65px;
 
 }
 
@@ -578,24 +770,32 @@ body.dark .ornamental-pattern {
     0 0 18px;
 
 
-  color: var(--gold);
+  color:
+    var(--gold);
 
 
-  font-size: 11px;
+  font-size:
+    11px;
 
-  font-weight: 600;
+
+  font-weight:
+    600;
 
 
-  letter-spacing: 2.5px;
+  letter-spacing:
+    2.5px;
 
-  text-transform: uppercase;
+
+  text-transform:
+    uppercase;
 
 }
 
 
 .section-heading h2 {
 
-  margin: 0;
+  margin:
+    0;
 
 
   font-family:
@@ -612,19 +812,24 @@ body.dark .ornamental-pattern {
     );
 
 
-  font-weight: 500;
+  font-weight:
+    500;
 
 
-  line-height: 0.95;
+  line-height:
+    0.95;
 
-  letter-spacing: -2px;
+
+  letter-spacing:
+    -2px;
 
 }
 
 
 .section-heading h2 em {
 
-  font-weight: 400;
+  font-weight:
+    400;
 
 }
 
@@ -640,29 +845,36 @@ body.dark .ornamental-pattern {
     calc(100vh - 76px);
 
 
-  display: grid;
+  display:
+    grid;
 
 
   grid-template-columns:
     1.1fr 0.9fr;
 
 
-  align-items: center;
+  align-items:
+    center;
 
 
-  gap: 80px;
+  gap:
+    80px;
 
 
-  padding-top: 80px;
+  padding-top:
+    80px;
 
-  padding-bottom: 100px;
+
+  padding-bottom:
+    100px;
 
 }
 
 
 .hero-copy h1 {
 
-  margin: 0;
+  margin:
+    0;
 
 
   font-family:
@@ -679,79 +891,104 @@ body.dark .ornamental-pattern {
     );
 
 
-  font-weight: 500;
+  font-weight:
+    500;
 
 
-  line-height: 0.88;
+  line-height:
+    0.88;
 
-  letter-spacing: -3px;
+
+  letter-spacing:
+    -3px;
 
 }
 
 
 .hero-copy h1 em {
 
-  font-weight: 400;
+  font-weight:
+    400;
 
 }
 
 
 .hero-subtitle {
 
-  max-width: 600px;
+  max-width:
+    600px;
+
 
   margin:
     35px 0 0;
 
 
-  color: var(--text-soft);
+  color:
+    var(--text-soft);
 
-  font-size: 16px;
+
+  font-size:
+    16px;
 
 }
 
 
 .hero-actions {
 
-  display: flex;
+  display:
+    flex;
 
-  flex-wrap: wrap;
 
-  gap: 14px;
+  flex-wrap:
+    wrap;
 
-  margin-top: 35px;
+
+  gap:
+    14px;
+
+
+  margin-top:
+    35px;
 
 }
 
 
 .hero-photo {
 
-  display: flex;
+  display:
+    flex;
 
-  justify-content: center;
+
+  justify-content:
+    center;
 
 }
 
 
 .hero-photo img {
 
-  display: block;
+  display:
+    block;
 
 
-  width: 100%;
+  width:
+    100%;
 
-  max-width: 470px;
+
+  max-width:
+    470px;
 
 
   aspect-ratio:
     4 / 5;
 
 
-  object-fit: cover;
+  object-fit:
+    cover;
 
 
   border:
-    1px solid var(--border);
+    1px solid var(--gold);
 
 
   box-shadow:
@@ -767,32 +1004,44 @@ body.dark .ornamental-pattern {
 
 .button {
 
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
+  display:
+    inline-flex;
 
 
-  min-height: 48px;
+  align-items:
+    center;
+
+
+  justify-content:
+    center;
+
+
+  min-height:
+    48px;
+
 
   padding:
     12px 24px;
 
 
   border:
-    1px solid var(--accent);
+    1px solid var(--gold);
 
 
-  text-decoration: none;
+  text-decoration:
+    none;
 
 
-  font-size: 13px;
+  font-size:
+    13px;
 
-  font-weight: 500;
+
+  font-weight:
+    500;
 
 
-  cursor: pointer;
+  cursor:
+    pointer;
 
 
   transition:
@@ -813,13 +1062,22 @@ body.dark .ornamental-pattern {
 }
 
 
+
+/* Primary buttons:
+   Brown background + GOLD text */
+
 .button.primary {
 
   background:
     var(--accent);
 
+
   color:
-    #fff;
+    var(--gold);
+
+
+  border-color:
+    var(--accent);
 
 
   box-shadow:
@@ -835,6 +1093,14 @@ body.dark .ornamental-pattern {
     var(--accent-hover);
 
 
+  color:
+    var(--gold-bright);
+
+
+  border-color:
+    var(--gold);
+
+
   box-shadow:
     0 12px 25px
     rgba(70, 30, 25, 0.18);
@@ -842,17 +1108,22 @@ body.dark .ornamental-pattern {
 }
 
 
+
+/* Secondary buttons:
+   Transparent + GOLD text */
+
 .button.secondary {
 
   background:
     transparent;
 
+
   color:
-    var(--text);
+    var(--gold);
 
 
   border-color:
-    var(--border);
+    var(--gold);
 
 }
 
@@ -860,10 +1131,15 @@ body.dark .ornamental-pattern {
 .button.secondary:hover {
 
   border-color:
-    var(--gold);
+    var(--gold-bright);
+
 
   color:
-    var(--gold);
+    var(--gold-bright);
+
+
+  background:
+    var(--gold-soft);
 
 }
 
@@ -875,19 +1151,24 @@ body.dark .ornamental-pattern {
 
 .about-grid {
 
-  display: grid;
+  display:
+    grid;
+
 
   grid-template-columns:
     1.1fr 0.9fr;
 
-  gap: 90px;
+
+  gap:
+    90px;
 
 }
 
 
 .large-text {
 
-  margin: 0;
+  margin:
+    0;
 
 
   font-family:
@@ -904,10 +1185,12 @@ body.dark .ornamental-pattern {
     );
 
 
-  font-weight: 400;
+  font-weight:
+    400;
 
 
-  line-height: 1.15;
+  line-height:
+    1.15;
 
 }
 
@@ -917,7 +1200,9 @@ body.dark .ornamental-pattern {
   color:
     var(--text-soft);
 
-  font-size: 15px;
+
+  font-size:
+    15px;
 
 }
 
@@ -932,7 +1217,8 @@ body.dark .ornamental-pattern {
 
 .about-details p:last-child {
 
-  margin-bottom: 0;
+  margin-bottom:
+    0;
 
 }
 
@@ -945,21 +1231,23 @@ body.dark .ornamental-pattern {
 .education-list {
 
   border-top:
-    1px solid var(--border);
+    1px solid var(--gold);
 
 }
 
 
 .education-item {
 
-  display: grid;
+  display:
+    grid;
 
 
   grid-template-columns:
     100px 1fr;
 
 
-  gap: 35px;
+  gap:
+    35px;
 
 
   padding:
@@ -984,7 +1272,8 @@ body.dark .ornamental-pattern {
     serif;
 
 
-  font-size: 26px;
+  font-size:
+    26px;
 
 }
 
@@ -1009,19 +1298,25 @@ body.dark .ornamental-pattern {
     serif;
 
 
-  font-size: 38px;
+  font-size:
+    38px;
 
-  font-weight: 500;
+
+  font-weight:
+    500;
 
 
-  line-height: 1.1;
+  line-height:
+    1.1;
 
 }
 
 
 .education-content p {
 
-  margin: 0;
+  margin:
+    0;
+
 
   color:
     var(--text-soft);
@@ -1040,15 +1335,20 @@ body.dark .ornamental-pattern {
     var(--gold);
 
 
-  font-size: 11px;
-
-  font-weight: 600;
-
-
-  letter-spacing: 2px;
+  font-size:
+    11px;
 
 
-  text-transform: uppercase;
+  font-weight:
+    600;
+
+
+  letter-spacing:
+    2px;
+
+
+  text-transform:
+    uppercase;
 
 }
 
@@ -1068,17 +1368,20 @@ body.dark .ornamental-pattern {
 
 .certificate-layout {
 
-  display: grid;
+  display:
+    grid;
 
 
   grid-template-columns:
     0.65fr 1.35fr;
 
 
-  gap: 55px;
+  gap:
+    55px;
 
 
-  align-items: start;
+  align-items:
+    start;
 
 }
 
@@ -1095,12 +1398,16 @@ body.dark .ornamental-pattern {
     serif;
 
 
-  font-size: 46px;
+  font-size:
+    46px;
 
-  font-weight: 500;
+
+  font-weight:
+    500;
 
 
-  line-height: 1;
+  line-height:
+    1;
 
 }
 
@@ -1115,54 +1422,68 @@ body.dark .ornamental-pattern {
     var(--muted);
 
 
-  font-size: 15px;
+  font-size:
+    15px;
 
 }
 
 
 .certificate-frame {
 
-  width: 100%;
-
-  height: 720px;
-
-
-  overflow: hidden;
+  width:
+    100%;
 
 
-  background: #fff;
+  height:
+    720px;
+
+
+  overflow:
+    hidden;
+
+
+  background:
+    #fff;
 
 
   border:
-    1px solid var(--border);
+    1px solid var(--gold);
 
 
   box-shadow:
     var(--shadow);
 
 
-  color-scheme: light;
+  color-scheme:
+    light;
 
 }
 
 
 .certificate-frame iframe {
 
-  display: block;
+  display:
+    block;
 
 
-  width: 100%;
-
-  height: 100%;
-
-
-  border: 0;
+  width:
+    100%;
 
 
-  background: #fff;
+  height:
+    100%;
 
 
-  color-scheme: light;
+  border:
+    0;
+
+
+  background:
+    #fff;
+
+
+  color-scheme:
+    light;
 
 
   filter:
@@ -1182,17 +1503,20 @@ body.dark .ornamental-pattern {
 
 .graduation-layout {
 
-  display: grid;
+  display:
+    grid;
 
 
   grid-template-columns:
     0.7fr 1.3fr;
 
 
-  gap: 60px;
+  gap:
+    60px;
 
 
-  align-items: center;
+  align-items:
+    center;
 
 }
 
@@ -1209,36 +1533,36 @@ body.dark .ornamental-pattern {
     serif;
 
 
-  font-size: 42px;
+  font-size:
+    42px;
 
-  font-weight: 500;
+
+  font-weight:
+    500;
 
 
-  line-height: 1.05;
+  line-height:
+    1.05;
 
 }
 
 
 .graduation-info p {
 
-  max-width: 500px;
+  max-width:
+    500px;
 
 }
 
 
-/*
-  Graduation image:
-
-  Original image is 3507 × 2496,
-  so it remains landscape.
-*/
-
 .graduation-frame {
 
-  width: 100%;
+  width:
+    100%;
 
 
-  padding: 14px;
+  padding:
+    14px;
 
 
   background:
@@ -1246,29 +1570,35 @@ body.dark .ornamental-pattern {
 
 
   border:
-    1px solid var(--border);
+    1px solid var(--gold);
 
 
   box-shadow:
     var(--shadow);
 
 
-  overflow: hidden;
+  overflow:
+    hidden;
 
 }
 
 
 .graduation-frame img {
 
-  display: block;
+  display:
+    block;
 
 
-  width: 100%;
+  width:
+    100%;
 
-  height: auto;
+
+  height:
+    auto;
 
 
-  max-width: 100%;
+  max-width:
+    100%;
 
 }
 
@@ -1280,17 +1610,20 @@ body.dark .ornamental-pattern {
 
 .cv-layout {
 
-  display: grid;
+  display:
+    grid;
 
 
   grid-template-columns:
     0.7fr 1.3fr;
 
 
-  gap: 60px;
+  gap:
+    60px;
 
 
-  align-items: center;
+  align-items:
+    center;
 
 }
 
@@ -1307,19 +1640,24 @@ body.dark .ornamental-pattern {
     serif;
 
 
-  font-size: 42px;
+  font-size:
+    42px;
 
-  font-weight: 500;
+
+  font-weight:
+    500;
 
 
-  line-height: 1.05;
+  line-height:
+    1.05;
 
 }
 
 
 .cv-info > p:not(.meta) {
 
-  max-width: 500px;
+  max-width:
+    500px;
 
 
   margin:
@@ -1330,78 +1668,92 @@ body.dark .ornamental-pattern {
     var(--muted);
 
 
-  font-size: 15px;
+  font-size:
+    15px;
 
 }
 
 
 .cv-actions {
 
-  display: flex;
+  display:
+    flex;
 
-  flex-wrap: wrap;
 
-  gap: 14px;
+  flex-wrap:
+    wrap;
 
-  margin-top: 30px;
+
+  gap:
+    14px;
+
+
+  margin-top:
+    30px;
 
 }
 
 
-/*
-  Portrait CV document.
-
-  A4 ratio:
-  210 / 297
-*/
-
 .cv-frame {
 
-  width: 100%;
+  width:
+    100%;
 
-  max-width: 650px;
+
+  max-width:
+    650px;
 
 
   aspect-ratio:
     210 / 297;
 
 
-  overflow: hidden;
+  overflow:
+    hidden;
 
 
-  background: #fff;
+  background:
+    #fff;
 
 
   border:
-    1px solid var(--border);
+    1px solid var(--gold);
 
 
   box-shadow:
     var(--shadow);
 
 
-  color-scheme: light;
+  color-scheme:
+    light;
 
 }
 
 
 .cv-frame iframe {
 
-  display: block;
+  display:
+    block;
 
 
-  width: 100%;
-
-  height: 100%;
-
-
-  border: 0;
+  width:
+    100%;
 
 
-  background: #fff;
+  height:
+    100%;
 
 
-  color-scheme: light;
+  border:
+    0;
+
+
+  background:
+    #fff;
+
+
+  color-scheme:
+    light;
 
 
   filter:
@@ -1421,7 +1773,8 @@ body.dark .ornamental-pattern {
 
 .contact-grid {
 
-  display: grid;
+  display:
+    grid;
 
 
   grid-template-columns:
@@ -1429,35 +1782,43 @@ body.dark .ornamental-pattern {
 
 
   border-top:
-    1px solid var(--border);
+    1px solid var(--gold);
 
 
   border-left:
-    1px solid var(--border);
+    1px solid var(--gold);
 
 }
 
 
 .contact-card {
 
-  position: relative;
+  position:
+    relative;
 
 
-  min-height: 170px;
+  min-height:
+    170px;
 
 
-  display: flex;
+  display:
+    flex;
 
-  flex-direction: column;
 
-  justify-content: center;
+  flex-direction:
+    column;
+
+
+  justify-content:
+    center;
 
 
   padding:
     30px 35px;
 
 
-  text-decoration: none;
+  text-decoration:
+    none;
 
 
   border-right:
@@ -1489,28 +1850,36 @@ body.dark .ornamental-pattern {
 
 .contact-label {
 
-  margin-bottom: 8px;
+  margin-bottom:
+    8px;
 
 
   color:
     var(--gold);
 
 
-  font-size: 10px;
+  font-size:
+    10px;
 
-  font-weight: 600;
+
+  font-weight:
+    600;
 
 
-  letter-spacing: 2px;
+  letter-spacing:
+    2px;
 
-  text-transform: uppercase;
+
+  text-transform:
+    uppercase;
 
 }
 
 
 .contact-value {
 
-  padding-right: 35px;
+  padding-right:
+    35px;
 
 
   color:
@@ -1523,36 +1892,45 @@ body.dark .ornamental-pattern {
     serif;
 
 
-  font-size: 27px;
+  font-size:
+    27px;
 
 
-  line-height: 1.1;
+  line-height:
+    1.1;
 
 
-  overflow-wrap: anywhere;
+  overflow-wrap:
+    anywhere;
 
 }
 
 
 .contact-arrow {
 
-  position: absolute;
+  position:
+    absolute;
 
 
-  top: 30px;
+  top:
+    30px;
 
-  right: 30px;
+
+  right:
+    30px;
 
 
   color:
     var(--gold);
 
 
-  font-size: 22px;
+  font-size:
+    22px;
 
 
   transition:
-    transform 0.25s ease;
+    transform 0.25s ease,
+    color 0.25s ease;
 
 }
 
@@ -1560,7 +1938,14 @@ body.dark .ornamental-pattern {
 .contact-card:hover .contact-arrow {
 
   transform:
-    translate(3px, -3px);
+    translate(
+      3px,
+      -3px
+    );
+
+
+  color:
+    var(--gold-bright);
 
 }
 
@@ -1587,32 +1972,36 @@ body.dark .ornamental-pattern {
     35px 0;
 
 
-  display: flex;
+  display:
+    flex;
 
 
   justify-content:
     space-between;
 
 
-  gap: 20px;
+  gap:
+    20px;
 
 
   border-top:
-    1px solid var(--border);
+    1px solid var(--gold);
 
 
   color:
-    var(--muted);
+    var(--gold);
 
 
-  font-size: 12px;
+  font-size:
+    12px;
 
 }
 
 
 .site-footer p {
 
-  margin: 0;
+  margin:
+    0;
 
 }
 
@@ -1624,7 +2013,8 @@ body.dark .ornamental-pattern {
 
 .reveal {
 
-  opacity: 0;
+  opacity:
+    0;
 
 
   transform:
@@ -1640,7 +2030,8 @@ body.dark .ornamental-pattern {
 
 .reveal.visible {
 
-  opacity: 1;
+  opacity:
+    1;
 
 
   transform:
@@ -1659,21 +2050,24 @@ body.dark .ornamental-pattern {
 
   .header-inner {
 
-    gap: 18px;
+    gap:
+      18px;
 
   }
 
 
   .main-nav {
 
-    gap: 18px;
+    gap:
+      18px;
 
   }
 
 
   .main-nav a {
 
-    font-size: 12px;
+    font-size:
+      12px;
 
   }
 
@@ -1683,14 +2077,17 @@ body.dark .ornamental-pattern {
     grid-template-columns:
       1fr 0.8fr;
 
-    gap: 45px;
+
+    gap:
+      45px;
 
   }
 
 
   .about-grid {
 
-    gap: 50px;
+    gap:
+      50px;
 
   }
 
@@ -1700,14 +2097,17 @@ body.dark .ornamental-pattern {
     grid-template-columns:
       1fr;
 
-    gap: 40px;
+
+    gap:
+      40px;
 
   }
 
 
   .certificate-frame {
 
-    height: 700px;
+    height:
+      700px;
 
   }
 
@@ -1717,7 +2117,9 @@ body.dark .ornamental-pattern {
     grid-template-columns:
       0.8fr 1.2fr;
 
-    gap: 35px;
+
+    gap:
+      35px;
 
   }
 
@@ -1727,17 +2129,19 @@ body.dark .ornamental-pattern {
     grid-template-columns:
       0.8fr 1.2fr;
 
-    gap: 35px;
+
+    gap:
+      35px;
 
   }
 
 
   .cv-frame {
 
-    max-width: 100%;
+    max-width:
+      100%;
 
   }
-
 
 }
 
@@ -1750,25 +2154,26 @@ body.dark .ornamental-pattern {
 @media (max-width: 800px) {
 
 
-  /* HEADER */
-
   .header-inner {
 
     width:
       calc(100% - 28px);
 
 
-    min-height: 68px;
+    min-height:
+      68px;
 
 
-    gap: 12px;
+    gap:
+      12px;
 
   }
 
 
   .brand {
 
-    font-size: 27px;
+    font-size:
+      27px;
 
   }
 
@@ -1779,7 +2184,8 @@ body.dark .ornamental-pattern {
       flex-start;
 
 
-    gap: 16px;
+    gap:
+      16px;
 
 
     overflow-x:
@@ -1794,33 +2200,63 @@ body.dark .ornamental-pattern {
 
   .main-nav::-webkit-scrollbar {
 
-    display: none;
+    display:
+      none;
 
   }
 
 
   .main-nav a {
 
-    font-size: 11px;
+    font-size:
+      11px;
 
   }
 
 
   .main-nav a::after {
 
-    display: none;
+    display:
+      none;
 
   }
 
 
   .theme-toggle {
 
-    width: 38px;
+    width:
+      38px;
 
-    height: 38px;
+
+    height:
+      38px;
 
 
-    font-size: 16px;
+    font-size:
+      16px;
+
+  }
+
+
+
+  /* GOLDEN DIVIDER */
+
+  .ornamental-divider {
+
+    height:
+      78px;
+
+  }
+
+
+  .ornamental-pattern {
+
+    height:
+      78px;
+
+
+    background-size:
+      auto 78px;
 
   }
 
@@ -1861,29 +2297,6 @@ body.dark .ornamental-pattern {
 
 
 
-  /* GOLD DIVIDER */
-
-  .ornamental-divider {
-
-    height:
-      78px;
-
-  }
-
-
-  .ornamental-pattern {
-
-    height:
-      78px;
-
-
-    background-size:
-      auto 78px;
-
-  }
-
-
-
   /* HERO */
 
   .hero {
@@ -1896,7 +2309,8 @@ body.dark .ornamental-pattern {
       1fr;
 
 
-    gap: 50px;
+    gap:
+      50px;
 
 
     padding-top:
@@ -1972,248 +2386,4 @@ body.dark .ornamental-pattern {
   }
 
 
-  .large-text {
-
-    font-size:
-      34px;
-
-  }
-
-
-
-  /* EDUCATION */
-
-  .education-item {
-
-    grid-template-columns:
-      55px 1fr;
-
-
-    gap:
-      15px;
-
-
-    padding:
-      30px 0;
-
-  }
-
-
-  .education-content h3 {
-
-    font-size:
-      32px;
-
-  }
-
-
-
-  /* CERTIFICATE */
-
-  .certificate-layout {
-
-    grid-template-columns:
-      1fr;
-
-
-    gap:
-      35px;
-
-  }
-
-
-  .certificate-info h3 {
-
-    font-size:
-      38px;
-
-  }
-
-
-  .certificate-frame {
-
-    height:
-      600px;
-
-  }
-
-
-
-  /* GRADUATION */
-
-  .graduation-layout {
-
-    grid-template-columns:
-      1fr;
-
-
-    gap:
-      35px;
-
-  }
-
-
-  .graduation-info h3 {
-
-    font-size:
-      34px;
-
-  }
-
-
-  .graduation-frame {
-
-    width:
-      100%;
-
-
-    padding:
-      10px;
-
-  }
-
-
-  .graduation-frame img {
-
-    width:
-      100%;
-
-
-    height:
-      auto;
-
-
-    max-width:
-      100%;
-
-  }
-
-
-
-  /* CV */
-
-  .cv-layout {
-
-    grid-template-columns:
-      1fr;
-
-
-    gap:
-      35px;
-
-  }
-
-
-  .cv-info h3 {
-
-    font-size:
-      34px;
-
-  }
-
-
-  .cv-frame {
-
-    width:
-      100%;
-
-
-    max-width:
-      100%;
-
-  }
-
-
-  .cv-actions {
-
-    flex-direction:
-      column;
-
-  }
-
-
-  .cv-actions .button {
-
-    width:
-      100%;
-
-  }
-
-
-
-  /* CONTACT */
-
-  .contact-grid {
-
-    grid-template-columns:
-      1fr;
-
-  }
-
-
-  .contact-card {
-
-    min-height:
-      145px;
-
-
-    padding:
-      25px;
-
-  }
-
-
-  .contact-value {
-
-    font-size:
-      25px;
-
-  }
-
-
-  .contact-arrow {
-
-    top:
-      25px;
-
-
-    right:
-      25px;
-
-  }
-
-
-
-  /* FOOTER */
-
-  .site-footer {
-
-    width:
-      calc(100% - 28px);
-
-
-    flex-direction:
-      column;
-
-
-    gap:
-      8px;
-
-
-    padding:
-      28px 0;
-
-  }
-
-}
-
-
-
-/* =========================================================
-   SMALL PHONES
-========================================================= */
-
-@media (max-width: 500px) {
-
-
-  .
+  .large-
