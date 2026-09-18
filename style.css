@@ -1,146 +1,245 @@
 /* =========================================================
    MO. PORTFOLIO
    Classic Italian Editorial Design
+   Golden Geometric Afghan-Inspired Dividers
+========================================================= */
+
+
+/* =========================================================
+   ROOT VARIABLES
 ========================================================= */
 
 :root {
+
   --background: #f5f1e8;
+
   --surface: #fffdf8;
+
   --surface-alt: #ebe5d8;
 
+
   --text: #20241f;
+
   --text-soft: #505750;
+
   --muted: #687067;
+
 
   --border: #d2c9b8;
 
+
   --accent: #7b332a;
+
   --accent-hover: #5d241e;
 
-  --shadow: 0 18px 45px rgba(40, 34, 25, 0.10);
+
+  /* Golden decorative color */
+
+  --gold: #d2a64b;
+
+  --gold-soft: rgba(210, 166, 75, 0.16);
+
+
+  --shadow:
+    0 18px 45px rgba(40, 34, 25, 0.10);
+
 
   --max-width: 1200px;
+
 }
 
 
-/* DARK MODE */
-
 body.dark {
+
   --background: #111310;
+
   --surface: #181b17;
+
   --surface-alt: #20231e;
 
+
   --text: #eee9dc;
+
   --text-soft: #c6c2b8;
+
   --muted: #aaa79e;
+
 
   --border: #383a34;
 
+
   --accent: #c47b6d;
+
   --accent-hover: #d28d7f;
 
-  --shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+
+  --gold: #d2a64b;
+
+  --gold-soft: rgba(210, 166, 75, 0.12);
+
+
+  --shadow:
+    0 18px 45px rgba(0, 0, 0, 0.35);
+
 }
 
 
-/* RESET */
+
+/* =========================================================
+   RESET
+========================================================= */
 
 * {
   box-sizing: border-box;
 }
 
+
 html {
+
   scroll-behavior: smooth;
+
 }
 
+
 body {
+
   margin: 0;
 
   background: var(--background);
+
   color: var(--text);
 
-  font-family: "Inter", Arial, sans-serif;
+  font-family:
+    "Inter",
+    Arial,
+    sans-serif;
 
   font-size: 16px;
+
   line-height: 1.7;
 
   transition:
     background-color 0.35s ease,
     color 0.35s ease;
+
 }
+
 
 img {
+
   max-width: 100%;
+
 }
 
+
 ::selection {
-  background: var(--accent);
-  color: #fff;
+
+  background: var(--gold);
+
+  color: #201b10;
+
 }
+
 
 
 /* =========================================================
-   LOADER
+   LOADING SCREEN
 ========================================================= */
 
 .loader {
+
   position: fixed;
+
   inset: 0;
 
   z-index: 9999;
 
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
+
   background: var(--background);
+
 
   transition:
     opacity 0.7s ease,
     visibility 0.7s ease;
+
 }
+
 
 .loader.hide {
+
   opacity: 0;
+
   visibility: hidden;
+
   pointer-events: none;
+
 }
+
 
 .loader-inner {
+
   text-align: center;
+
 }
 
-.laurel {
-  color: var(--accent);
 
-  font-family: "Cormorant Garamond", Georgia, serif;
+.laurel {
+
+  color: var(--gold);
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
 
   font-size: 34px;
 
   margin-bottom: 10px;
+
 }
+
 
 .loader-line {
+
   width: 90px;
+
   height: 1px;
 
-  margin: 0 auto 15px;
+  margin:
+    0 auto 15px;
 
-  background: var(--accent);
+  background: var(--gold);
+
 }
 
+
 .loader-inner p {
+
   margin: 0;
 
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
 
   font-size: 42px;
+
   line-height: 1;
 
   font-style: italic;
+
 }
 
+
 .loader-inner span {
+
   display: block;
 
   margin-top: 10px;
@@ -152,7 +251,9 @@ img {
   letter-spacing: 2px;
 
   text-transform: uppercase;
+
 }
+
 
 
 /* =========================================================
@@ -160,7 +261,9 @@ img {
 ========================================================= */
 
 .site-header {
+
   position: sticky;
+
   top: 0;
 
   z-index: 1000;
@@ -169,141 +272,277 @@ img {
 
   background: var(--background);
 
-  border-bottom: 1px solid var(--border);
+  border-bottom:
+    1px solid var(--border);
+
 }
 
+
 .header-inner {
-  width: min(var(--max-width), calc(100% - 48px));
+
+  width:
+    min(
+      var(--max-width),
+      calc(100% - 48px)
+    );
 
   min-height: 76px;
 
   margin: 0 auto;
 
+
   display: flex;
+
   align-items: center;
 
   gap: 30px;
+
 }
 
+
 .brand {
+
   flex-shrink: 0;
 
   color: var(--text);
 
   text-decoration: none;
 
-  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
 
   font-size: 32px;
+
   font-weight: 600;
 
   line-height: 1;
 
   letter-spacing: 2px;
 
-  transition: color 0.25s ease;
+
+  transition:
+    color 0.25s ease;
+
 }
+
 
 .brand:hover {
-  color: var(--accent);
+
+  color: var(--gold);
+
 }
 
 
-/* NAVIGATION */
-
 .main-nav {
+
   flex: 1;
 
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
   gap: 28px;
+
 }
 
+
 .main-nav a {
+
   position: relative;
+
 
   color: var(--text-soft);
 
   text-decoration: none;
 
+
   font-size: 13px;
+
   font-weight: 500;
 
   white-space: nowrap;
 
+
   transition:
     color 0.25s ease,
     transform 0.25s ease;
+
 }
 
+
 .main-nav a::after {
+
   content: "";
 
   position: absolute;
 
   left: 0;
+
   bottom: -7px;
 
+
   width: 0;
+
   height: 1px;
 
-  background: var(--accent);
 
-  transition: width 0.25s ease;
+  background: var(--gold);
+
+
+  transition:
+    width 0.25s ease;
+
 }
+
 
 .main-nav a:hover {
-  color: var(--accent);
 
-  transform: translateY(-1px);
+  color: var(--gold);
+
+  transform:
+    translateY(-1px);
+
 }
+
 
 .main-nav a:hover::after {
+
   width: 100%;
+
 }
 
 
-/* THEME BUTTON */
-
 .theme-toggle {
+
   flex-shrink: 0;
 
+
   width: 42px;
+
   height: 42px;
 
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
 
   padding: 0;
 
-  border: 1px solid var(--border);
+
+  border:
+    1px solid var(--border);
 
   border-radius: 50%;
+
 
   background: var(--surface);
 
   color: var(--text);
 
+
   cursor: pointer;
 
   font-size: 18px;
+
 
   transition:
     transform 0.25s ease,
     background-color 0.25s ease,
     border-color 0.25s ease;
+
 }
+
 
 .theme-toggle:hover {
-  transform: translateY(-2px);
 
-  border-color: var(--accent);
+  transform:
+    translateY(-2px);
+
+  border-color: var(--gold);
 
   background: var(--surface-alt);
+
 }
+
+
+
+/* =========================================================
+   GOLDEN ORNAMENTAL DIVIDERS
+========================================================= */
+
+.ornamental-divider {
+
+  width: 100%;
+
+  height: 110px;
+
+
+  display: flex;
+
+  align-items: center;
+
+
+  overflow: hidden;
+
+
+  background: var(--background);
+
+
+  transition:
+    background-color 0.35s ease;
+
+}
+
+
+.ornamental-pattern {
+
+  width: 100%;
+
+  height: 100%;
+
+
+  background-image:
+    url("golden-texture.png");
+
+  background-repeat: repeat-x;
+
+  background-position:
+    center center;
+
+  background-size:
+    auto 110px;
+
+
+  opacity: 0.92;
+
+
+  transition:
+    opacity 0.35s ease;
+
+}
+
+
+/*
+  A subtle dark-mode adjustment.
+
+  The transparent texture remains golden,
+  while the surrounding background changes.
+*/
+
+body.dark .ornamental-pattern {
+
+  opacity: 0.82;
+
+}
+
 
 
 /* =========================================================
@@ -311,47 +550,84 @@ img {
 ========================================================= */
 
 .section {
-  width: min(var(--max-width), calc(100% - 48px));
+
+  width:
+    min(
+      var(--max-width),
+      calc(100% - 48px)
+    );
 
   margin: 0 auto;
 
-  padding: 120px 0;
+  padding:
+    120px 0;
+
 }
+
 
 .section-heading {
+
   margin-bottom: 65px;
+
 }
 
-.eyebrow {
-  margin: 0 0 18px;
 
-  color: var(--accent);
+.eyebrow {
+
+  margin:
+    0 0 18px;
+
+
+  color: var(--gold);
+
 
   font-size: 11px;
+
   font-weight: 600;
+
 
   letter-spacing: 2.5px;
 
   text-transform: uppercase;
+
 }
 
+
 .section-heading h2 {
+
   margin: 0;
 
-  font-family: "Cormorant Garamond", Georgia, serif;
 
-  font-size: clamp(55px, 7vw, 88px);
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+
+  font-size:
+    clamp(
+      55px,
+      7vw,
+      88px
+    );
+
 
   font-weight: 500;
+
 
   line-height: 0.95;
 
   letter-spacing: -2px;
+
 }
 
+
 .section-heading h2 em {
+
   font-weight: 400;
+
 }
+
 
 
 /* =========================================================
@@ -359,78 +635,130 @@ img {
 ========================================================= */
 
 .hero {
-  min-height: calc(100vh - 76px);
+
+  min-height:
+    calc(100vh - 76px);
+
 
   display: grid;
 
-  grid-template-columns: 1.1fr 0.9fr;
+
+  grid-template-columns:
+    1.1fr 0.9fr;
+
 
   align-items: center;
 
+
   gap: 80px;
 
+
   padding-top: 80px;
+
   padding-bottom: 100px;
+
 }
 
+
 .hero-copy h1 {
+
   margin: 0;
 
-  font-family: "Cormorant Garamond", Georgia, serif;
 
-  font-size: clamp(65px, 8vw, 110px);
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+
+  font-size:
+    clamp(
+      65px,
+      8vw,
+      110px
+    );
+
 
   font-weight: 500;
+
 
   line-height: 0.88;
 
   letter-spacing: -3px;
+
 }
+
 
 .hero-copy h1 em {
+
   font-weight: 400;
+
 }
 
+
 .hero-subtitle {
+
   max-width: 600px;
 
-  margin: 35px 0 0;
+  margin:
+    35px 0 0;
+
 
   color: var(--text-soft);
 
   font-size: 16px;
+
 }
 
+
 .hero-actions {
+
   display: flex;
+
   flex-wrap: wrap;
 
   gap: 14px;
 
   margin-top: 35px;
+
 }
 
+
 .hero-photo {
+
   display: flex;
 
   justify-content: center;
+
 }
 
+
 .hero-photo img {
+
   display: block;
+
 
   width: 100%;
 
   max-width: 470px;
 
-  aspect-ratio: 4 / 5;
+
+  aspect-ratio:
+    4 / 5;
+
 
   object-fit: cover;
 
-  border: 1px solid var(--border);
 
-  box-shadow: var(--shadow);
+  border:
+    1px solid var(--border);
+
+
+  box-shadow:
+    var(--shadow);
+
 }
+
 
 
 /* =========================================================
@@ -438,23 +766,34 @@ img {
 ========================================================= */
 
 .button {
+
   display: inline-flex;
 
   align-items: center;
+
   justify-content: center;
+
 
   min-height: 48px;
 
-  padding: 12px 24px;
+  padding:
+    12px 24px;
 
-  border: 1px solid var(--accent);
+
+  border:
+    1px solid var(--accent);
+
 
   text-decoration: none;
 
+
   font-size: 13px;
+
   font-weight: 500;
 
+
   cursor: pointer;
+
 
   transition:
     background-color 0.25s ease,
@@ -462,41 +801,72 @@ img {
     border-color 0.25s ease,
     transform 0.25s ease,
     box-shadow 0.25s ease;
+
 }
+
 
 .button:hover {
-  transform: translateY(-2px);
+
+  transform:
+    translateY(-2px);
+
 }
+
 
 .button.primary {
-  background: var(--accent);
 
-  color: #fff;
+  background:
+    var(--accent);
+
+  color:
+    #fff;
+
 
   box-shadow:
-    0 8px 20px rgba(70, 30, 25, 0.12);
+    0 8px 20px
+    rgba(70, 30, 25, 0.12);
+
 }
+
 
 .button.primary:hover {
-  background: var(--accent-hover);
+
+  background:
+    var(--accent-hover);
+
 
   box-shadow:
-    0 12px 25px rgba(70, 30, 25, 0.18);
+    0 12px 25px
+    rgba(70, 30, 25, 0.18);
+
 }
+
 
 .button.secondary {
-  background: transparent;
 
-  color: var(--text);
+  background:
+    transparent;
 
-  border-color: var(--border);
+  color:
+    var(--text);
+
+
+  border-color:
+    var(--border);
+
 }
+
 
 .button.secondary:hover {
-  border-color: var(--accent);
 
-  color: var(--accent);
+  border-color:
+    var(--gold);
+
+  color:
+    var(--gold);
+
 }
+
 
 
 /* =========================================================
@@ -504,38 +874,68 @@ img {
 ========================================================= */
 
 .about-grid {
+
   display: grid;
 
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns:
+    1.1fr 0.9fr;
 
   gap: 90px;
+
 }
 
+
 .large-text {
+
   margin: 0;
 
-  font-family: "Cormorant Garamond", Georgia, serif;
 
-  font-size: clamp(30px, 4vw, 48px);
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+
+  font-size:
+    clamp(
+      30px,
+      4vw,
+      48px
+    );
+
 
   font-weight: 400;
 
+
   line-height: 1.15;
+
 }
+
 
 .about-details {
-  color: var(--text-soft);
+
+  color:
+    var(--text-soft);
 
   font-size: 15px;
+
 }
+
 
 .about-details p {
-  margin: 0 0 24px;
+
+  margin:
+    0 0 24px;
+
 }
 
+
 .about-details p:last-child {
+
   margin-bottom: 0;
+
 }
+
 
 
 /* =========================================================
@@ -543,50 +943,91 @@ img {
 ========================================================= */
 
 .education-list {
-  border-top: 1px solid var(--border);
+
+  border-top:
+    1px solid var(--border);
+
 }
 
+
 .education-item {
+
   display: grid;
 
-  grid-template-columns: 100px 1fr;
+
+  grid-template-columns:
+    100px 1fr;
+
 
   gap: 35px;
 
-  padding: 38px 0;
 
-  border-bottom: 1px solid var(--border);
+  padding:
+    38px 0;
+
+
+  border-bottom:
+    1px solid var(--border);
+
 }
+
 
 .education-number {
-  color: var(--accent);
 
-  font-family: "Cormorant Garamond", Georgia, serif;
+  color:
+    var(--gold);
+
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
 
   font-size: 26px;
+
 }
+
 
 .education-content .meta {
-  margin: 0 0 8px;
+
+  margin:
+    0 0 8px;
+
 }
 
-.education-content h3 {
-  margin: 0 0 8px;
 
-  font-family: "Cormorant Garamond", Georgia, serif;
+.education-content h3 {
+
+  margin:
+    0 0 8px;
+
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
 
   font-size: 38px;
 
   font-weight: 500;
 
+
   line-height: 1.1;
+
 }
+
 
 .education-content p {
+
   margin: 0;
 
-  color: var(--text-soft);
+  color:
+    var(--text-soft);
+
 }
+
 
 
 /* =========================================================
@@ -594,20 +1035,31 @@ img {
 ========================================================= */
 
 .meta {
-  color: var(--accent);
+
+  color:
+    var(--gold);
+
 
   font-size: 11px;
 
   font-weight: 600;
 
+
   letter-spacing: 2px;
 
+
   text-transform: uppercase;
+
 }
 
+
 .muted {
-  color: var(--muted);
+
+  color:
+    var(--muted);
+
 }
+
 
 
 /* =========================================================
@@ -615,67 +1067,113 @@ img {
 ========================================================= */
 
 .certificate-layout {
+
   display: grid;
 
-  grid-template-columns: 0.65fr 1.35fr;
+
+  grid-template-columns:
+    0.65fr 1.35fr;
+
 
   gap: 55px;
 
+
   align-items: start;
+
 }
 
-.certificate-info h3 {
-  margin: 12px 0 20px;
 
-  font-family: "Cormorant Garamond", Georgia, serif;
+.certificate-info h3 {
+
+  margin:
+    12px 0 20px;
+
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
 
   font-size: 46px;
 
   font-weight: 500;
 
+
   line-height: 1;
+
 }
+
 
 .certificate-info > p:not(.meta) {
-  margin: 0 0 30px;
 
-  color: var(--muted);
+  margin:
+    0 0 30px;
+
+
+  color:
+    var(--muted);
+
 
   font-size: 15px;
+
 }
 
+
 .certificate-frame {
+
   width: 100%;
 
   height: 720px;
 
+
   overflow: hidden;
+
 
   background: #fff;
 
-  border: 1px solid var(--border);
 
-  box-shadow: var(--shadow);
+  border:
+    1px solid var(--border);
+
+
+  box-shadow:
+    var(--shadow);
+
 
   color-scheme: light;
+
 }
 
+
 .certificate-frame iframe {
+
   display: block;
 
+
   width: 100%;
+
   height: 100%;
+
 
   border: 0;
 
+
   background: #fff;
+
 
   color-scheme: light;
 
-  filter: none !important;
 
-  mix-blend-mode: normal !important;
+  filter:
+    none !important;
+
+
+  mix-blend-mode:
+    normal !important;
+
 }
+
 
 
 /* =========================================================
@@ -683,66 +1181,238 @@ img {
 ========================================================= */
 
 .graduation-layout {
+
   display: grid;
 
-  grid-template-columns: 0.7fr 1.3fr;
+
+  grid-template-columns:
+    0.7fr 1.3fr;
+
 
   gap: 60px;
 
+
   align-items: center;
+
 }
 
-.graduation-info h3 {
-  margin: 12px 0 20px;
 
-  font-family: "Cormorant Garamond", Georgia, serif;
+.graduation-info h3 {
+
+  margin:
+    12px 0 20px;
+
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
 
   font-size: 42px;
 
   font-weight: 500;
 
+
   line-height: 1.05;
+
 }
 
+
 .graduation-info p {
+
   max-width: 500px;
+
 }
 
 
 /*
-   The graduation photo is LANDSCAPE:
+  Graduation image:
 
-   3507 × 2496
-
-   Therefore there is no fixed portrait-height box.
-
-   The image simply scales to the available width
-   while keeping its original aspect ratio.
+  Original image is 3507 × 2496,
+  so it remains landscape.
 */
 
 .graduation-frame {
+
   width: 100%;
+
 
   padding: 14px;
 
-  background: var(--surface);
 
-  border: 1px solid var(--border);
+  background:
+    var(--surface);
 
-  box-shadow: var(--shadow);
+
+  border:
+    1px solid var(--border);
+
+
+  box-shadow:
+    var(--shadow);
+
 
   overflow: hidden;
+
 }
 
+
 .graduation-frame img {
+
   display: block;
+
 
   width: 100%;
 
   height: auto;
 
+
   max-width: 100%;
+
 }
+
+
+
+/* =========================================================
+   CV / RESUME
+========================================================= */
+
+.cv-layout {
+
+  display: grid;
+
+
+  grid-template-columns:
+    0.7fr 1.3fr;
+
+
+  gap: 60px;
+
+
+  align-items: center;
+
+}
+
+
+.cv-info h3 {
+
+  margin:
+    12px 0 20px;
+
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+
+  font-size: 42px;
+
+  font-weight: 500;
+
+
+  line-height: 1.05;
+
+}
+
+
+.cv-info > p:not(.meta) {
+
+  max-width: 500px;
+
+
+  margin:
+    0 0 30px;
+
+
+  color:
+    var(--muted);
+
+
+  font-size: 15px;
+
+}
+
+
+.cv-actions {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 14px;
+
+  margin-top: 30px;
+
+}
+
+
+/*
+  Portrait CV document.
+
+  A4 ratio:
+  210 / 297
+*/
+
+.cv-frame {
+
+  width: 100%;
+
+  max-width: 650px;
+
+
+  aspect-ratio:
+    210 / 297;
+
+
+  overflow: hidden;
+
+
+  background: #fff;
+
+
+  border:
+    1px solid var(--border);
+
+
+  box-shadow:
+    var(--shadow);
+
+
+  color-scheme: light;
+
+}
+
+
+.cv-frame iframe {
+
+  display: block;
+
+
+  width: 100%;
+
+  height: 100%;
+
+
+  border: 0;
+
+
+  background: #fff;
+
+
+  color-scheme: light;
+
+
+  filter:
+    none !important;
+
+
+  mix-blend-mode:
+    normal !important;
+
+}
+
 
 
 /* =========================================================
@@ -750,19 +1420,31 @@ img {
 ========================================================= */
 
 .contact-grid {
+
   display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
 
-  border-top: 1px solid var(--border);
+  grid-template-columns:
+    repeat(2, 1fr);
 
-  border-left: 1px solid var(--border);
+
+  border-top:
+    1px solid var(--border);
+
+
+  border-left:
+    1px solid var(--border);
+
 }
 
+
 .contact-card {
+
   position: relative;
 
+
   min-height: 170px;
+
 
   display: flex;
 
@@ -770,69 +1452,118 @@ img {
 
   justify-content: center;
 
-  padding: 30px 35px;
+
+  padding:
+    30px 35px;
+
 
   text-decoration: none;
 
-  border-right: 1px solid var(--border);
 
-  border-bottom: 1px solid var(--border);
+  border-right:
+    1px solid var(--border);
+
+
+  border-bottom:
+    1px solid var(--border);
+
 
   transition:
     background-color 0.3s ease,
     transform 0.3s ease;
+
 }
+
 
 .contact-card:hover {
-  background: var(--surface);
 
-  transform: translateY(-3px);
+  background:
+    var(--surface);
+
+
+  transform:
+    translateY(-3px);
+
 }
 
+
 .contact-label {
+
   margin-bottom: 8px;
 
-  color: var(--accent);
+
+  color:
+    var(--gold);
+
 
   font-size: 10px;
 
   font-weight: 600;
 
+
   letter-spacing: 2px;
 
   text-transform: uppercase;
+
 }
 
+
 .contact-value {
+
   padding-right: 35px;
 
-  color: var(--text);
 
-  font-family: "Cormorant Garamond", Georgia, serif;
+  color:
+    var(--text);
+
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
 
   font-size: 27px;
 
+
   line-height: 1.1;
 
+
   overflow-wrap: anywhere;
+
 }
 
+
 .contact-arrow {
+
   position: absolute;
 
+
   top: 30px;
+
   right: 30px;
 
-  color: var(--accent);
+
+  color:
+    var(--gold);
+
 
   font-size: 22px;
 
-  transition: transform 0.25s ease;
+
+  transition:
+    transform 0.25s ease;
+
 }
 
+
 .contact-card:hover .contact-arrow {
-  transform: translate(3px, -3px);
+
+  transform:
+    translate(3px, -3px);
+
 }
+
 
 
 /* =========================================================
@@ -840,49 +1571,83 @@ img {
 ========================================================= */
 
 .site-footer {
-  width: min(var(--max-width), calc(100% - 48px));
 
-  margin: 0 auto;
+  width:
+    min(
+      var(--max-width),
+      calc(100% - 48px)
+    );
 
-  padding: 35px 0;
+
+  margin:
+    0 auto;
+
+
+  padding:
+    35px 0;
+
 
   display: flex;
 
-  justify-content: space-between;
+
+  justify-content:
+    space-between;
+
 
   gap: 20px;
 
-  border-top: 1px solid var(--border);
 
-  color: var(--muted);
+  border-top:
+    1px solid var(--border);
+
+
+  color:
+    var(--muted);
+
 
   font-size: 12px;
+
 }
 
+
 .site-footer p {
+
   margin: 0;
+
 }
+
 
 
 /* =========================================================
-   REVEAL
+   SCROLL REVEAL
 ========================================================= */
 
 .reveal {
+
   opacity: 0;
 
-  transform: translateY(20px);
+
+  transform:
+    translateY(20px);
+
 
   transition:
     opacity 0.8s ease,
     transform 0.8s ease;
+
 }
+
 
 .reveal.visible {
+
   opacity: 1;
 
-  transform: translateY(0);
+
+  transform:
+    translateY(0);
+
 }
+
 
 
 /* =========================================================
@@ -891,44 +1656,91 @@ img {
 
 @media (max-width: 1000px) {
 
+
   .header-inner {
+
     gap: 18px;
+
   }
+
 
   .main-nav {
+
     gap: 18px;
+
   }
+
 
   .main-nav a {
+
     font-size: 12px;
+
   }
+
 
   .hero {
-    grid-template-columns: 1fr 0.8fr;
+
+    grid-template-columns:
+      1fr 0.8fr;
 
     gap: 45px;
+
   }
+
 
   .about-grid {
+
     gap: 50px;
+
   }
+
 
   .certificate-layout {
-    grid-template-columns: 1fr;
+
+    grid-template-columns:
+      1fr;
 
     gap: 40px;
+
   }
+
 
   .certificate-frame {
+
     height: 700px;
+
   }
+
 
   .graduation-layout {
-    grid-template-columns: 0.8fr 1.2fr;
+
+    grid-template-columns:
+      0.8fr 1.2fr;
 
     gap: 35px;
+
   }
+
+
+  .cv-layout {
+
+    grid-template-columns:
+      0.8fr 1.2fr;
+
+    gap: 35px;
+
+  }
+
+
+  .cv-frame {
+
+    max-width: 100%;
+
+  }
+
+
 }
+
 
 
 /* =========================================================
@@ -937,212 +1749,464 @@ img {
 
 @media (max-width: 800px) {
 
+
   /* HEADER */
 
   .header-inner {
-    width: calc(100% - 28px);
+
+    width:
+      calc(100% - 28px);
+
 
     min-height: 68px;
 
+
     gap: 12px;
+
   }
+
 
   .brand {
+
     font-size: 27px;
+
   }
 
+
   .main-nav {
-    justify-content: flex-start;
+
+    justify-content:
+      flex-start;
+
 
     gap: 16px;
 
-    overflow-x: auto;
 
-    scrollbar-width: none;
+    overflow-x:
+      auto;
+
+
+    scrollbar-width:
+      none;
+
   }
+
 
   .main-nav::-webkit-scrollbar {
+
     display: none;
+
   }
+
 
   .main-nav a {
+
     font-size: 11px;
+
   }
+
 
   .main-nav a::after {
+
     display: none;
+
   }
+
 
   .theme-toggle {
+
     width: 38px;
+
     height: 38px;
 
+
     font-size: 16px;
+
   }
+
 
 
   /* SECTIONS */
 
   .section {
-    width: calc(100% - 28px);
 
-    padding: 85px 0;
+    width:
+      calc(100% - 28px);
+
+
+    padding:
+      85px 0;
+
   }
+
 
   .section-heading {
-    margin-bottom: 45px;
+
+    margin-bottom:
+      45px;
+
   }
+
 
   .section-heading h2 {
-    font-size: 58px;
 
-    letter-spacing: -1px;
+    font-size:
+      58px;
+
+
+    letter-spacing:
+      -1px;
+
   }
+
+
+
+  /* GOLD DIVIDER */
+
+  .ornamental-divider {
+
+    height:
+      78px;
+
+  }
+
+
+  .ornamental-pattern {
+
+    height:
+      78px;
+
+
+    background-size:
+      auto 78px;
+
+  }
+
 
 
   /* HERO */
 
   .hero {
-    min-height: auto;
 
-    grid-template-columns: 1fr;
+    min-height:
+      auto;
+
+
+    grid-template-columns:
+      1fr;
+
 
     gap: 50px;
 
-    padding-top: 75px;
 
-    padding-bottom: 90px;
+    padding-top:
+      75px;
+
+
+    padding-bottom:
+      90px;
+
   }
+
 
   .hero-copy h1 {
-    font-size: clamp(60px, 17vw, 90px);
+
+    font-size:
+      clamp(
+        60px,
+        17vw,
+        90px
+      );
+
   }
+
 
   .hero-subtitle {
-    font-size: 14px;
 
-    margin-top: 28px;
+    font-size:
+      14px;
+
+
+    margin-top:
+      28px;
+
   }
+
 
   .hero-actions {
-    margin-top: 28px;
+
+    margin-top:
+      28px;
+
   }
+
 
   .hero-photo {
-    justify-content: flex-start;
+
+    justify-content:
+      flex-start;
+
   }
 
+
   .hero-photo img {
-    max-width: 100%;
+
+    max-width:
+      100%;
+
   }
+
 
 
   /* ABOUT */
 
   .about-grid {
-    grid-template-columns: 1fr;
 
-    gap: 40px;
+    grid-template-columns:
+      1fr;
+
+
+    gap:
+      40px;
+
   }
+
 
   .large-text {
-    font-size: 34px;
+
+    font-size:
+      34px;
+
   }
+
 
 
   /* EDUCATION */
 
   .education-item {
-    grid-template-columns: 55px 1fr;
 
-    gap: 15px;
+    grid-template-columns:
+      55px 1fr;
 
-    padding: 30px 0;
+
+    gap:
+      15px;
+
+
+    padding:
+      30px 0;
+
   }
+
 
   .education-content h3 {
-    font-size: 32px;
+
+    font-size:
+      32px;
+
   }
+
 
 
   /* CERTIFICATE */
 
   .certificate-layout {
-    grid-template-columns: 1fr;
 
-    gap: 35px;
+    grid-template-columns:
+      1fr;
+
+
+    gap:
+      35px;
+
   }
+
 
   .certificate-info h3 {
-    font-size: 38px;
+
+    font-size:
+      38px;
+
   }
 
+
   .certificate-frame {
-    height: 600px;
+
+    height:
+      600px;
+
   }
+
 
 
   /* GRADUATION */
 
   .graduation-layout {
-    grid-template-columns: 1fr;
 
-    gap: 35px;
+    grid-template-columns:
+      1fr;
+
+
+    gap:
+      35px;
+
   }
+
 
   .graduation-info h3 {
-    font-size: 34px;
+
+    font-size:
+      34px;
+
   }
+
 
   .graduation-frame {
-    width: 100%;
 
-    padding: 10px;
+    width:
+      100%;
+
+
+    padding:
+      10px;
+
   }
+
 
   .graduation-frame img {
-    width: 100%;
 
-    height: auto;
+    width:
+      100%;
 
-    max-width: 100%;
+
+    height:
+      auto;
+
+
+    max-width:
+      100%;
+
   }
+
+
+
+  /* CV */
+
+  .cv-layout {
+
+    grid-template-columns:
+      1fr;
+
+
+    gap:
+      35px;
+
+  }
+
+
+  .cv-info h3 {
+
+    font-size:
+      34px;
+
+  }
+
+
+  .cv-frame {
+
+    width:
+      100%;
+
+
+    max-width:
+      100%;
+
+  }
+
+
+  .cv-actions {
+
+    flex-direction:
+      column;
+
+  }
+
+
+  .cv-actions .button {
+
+    width:
+      100%;
+
+  }
+
 
 
   /* CONTACT */
 
   .contact-grid {
-    grid-template-columns: 1fr;
+
+    grid-template-columns:
+      1fr;
+
   }
+
 
   .contact-card {
-    min-height: 145px;
 
-    padding: 25px;
+    min-height:
+      145px;
+
+
+    padding:
+      25px;
+
   }
+
 
   .contact-value {
-    font-size: 25px;
+
+    font-size:
+      25px;
+
   }
 
+
   .contact-arrow {
-    top: 25px;
-    right: 25px;
+
+    top:
+      25px;
+
+
+    right:
+      25px;
+
   }
+
 
 
   /* FOOTER */
 
   .site-footer {
-    width: calc(100% - 28px);
 
-    flex-direction: column;
+    width:
+      calc(100% - 28px);
 
-    gap: 8px;
 
-    padding: 28px 0;
+    flex-direction:
+      column;
+
+
+    gap:
+      8px;
+
+
+    padding:
+      28px 0;
+
   }
+
 }
+
 
 
 /* =========================================================
@@ -1151,107 +2215,5 @@ img {
 
 @media (max-width: 500px) {
 
-  .header-inner {
-    width: calc(100% - 20px);
 
-    gap: 8px;
-  }
-
-  .brand {
-    font-size: 25px;
-  }
-
-  .main-nav {
-    gap: 13px;
-  }
-
-  .main-nav a {
-    font-size: 10px;
-  }
-
-  .theme-toggle {
-    width: 36px;
-    height: 36px;
-  }
-
-
-  .section {
-    width: calc(100% - 20px);
-  }
-
-  .section-heading h2 {
-    font-size: 49px;
-  }
-
-
-  .hero-copy h1 {
-    font-size: 58px;
-
-    letter-spacing: -2px;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-
-    align-items: stretch;
-  }
-
-  .button {
-    width: 100%;
-  }
-
-
-  .education-item {
-    grid-template-columns: 1fr;
-  }
-
-  .education-number {
-    font-size: 20px;
-  }
-
-  .education-content h3 {
-    font-size: 29px;
-  }
-
-
-  .certificate-frame {
-    height: 520px;
-  }
-
-
-  .graduation-frame {
-    padding: 8px;
-  }
-
-
-  .contact-value {
-    font-size: 22px;
-  }
-}
-
-
-/* =========================================================
-   REDUCED MOTION
-========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before {
-    animation-duration: 0.01ms !important;
-
-    animation-iteration-count: 1 !important;
-
-    transition-duration: 0.01ms !important;
-  }
-
-  .reveal {
-    opacity: 1;
-
-    transform: none;
-  }
-}
+  .
