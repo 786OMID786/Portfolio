@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://786omid786.github.io/Portfolio/sitemap.xml
